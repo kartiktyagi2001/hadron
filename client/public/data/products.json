@@ -1,0 +1,56 @@
+[
+  {
+    "id": "bms-12s-100a",
+    "slug": "bms-12s-100a",
+    "title": "BMS 12S 100A (LiFePO4)",
+    "shortDescription": "High-current Battery Management System designed for 12-series LiFePO4 battery packs with robust protection features.",
+    "fullDescription": "The BMS 12S 100A is engineered for demanding applications requiring reliable power management in LiFePO4 battery systems. Featuring advanced protection circuitry and high-current handling capabilities, this BMS ensures optimal battery performance and longevity. Ideal for electric vehicles, energy storage systems, and industrial applications.",
+    "imageUrl": "/attached_assets/generated_images/BMS_12S_100A_product_bd1b8339.png",
+    "category": "LiFePO4 BMS",
+    "specifications": {
+      "Voltage": "36V (12S)",
+      "Continuous Current": "100A",
+      "Peak Current": "200A",
+      "Protection Features": "Over-charge, Over-discharge, Short-circuit, Over-temperature",
+      "Compatibility": "LiFePO4 (3.2V per cell)",
+      "Operating Temperature": "-20°C to +60°C",
+      "Dimensions": "150mm × 80mm × 25mm"
+    }
+  },
+  {
+    "id": "bms-16s-150a",
+    "slug": "bms-16s-150a",
+    "title": "BMS 16S 150A (Li-ion)",
+    "shortDescription": "Premium high-power Battery Management System for 16-series lithium-ion configurations with advanced monitoring capabilities.",
+    "fullDescription": "Our flagship BMS 16S 150A delivers exceptional performance for high-voltage lithium-ion applications. With sophisticated cell balancing algorithms and comprehensive protection mechanisms, this BMS is perfect for commercial EVs, grid storage, and high-power industrial equipment. The advanced thermal management ensures safe operation under extreme conditions.",
+    "imageUrl": "/attached_assets/generated_images/BMS_16S_150A_product_3636402c.png",
+    "category": "Li-ion BMS",
+    "specifications": {
+      "Voltage": "59.2V (16S)",
+      "Continuous Current": "150A",
+      "Peak Current": "300A",
+      "Protection Features": "Over-charge, Over-discharge, Short-circuit, Over-temperature, Cell balancing",
+      "Compatibility": "Li-ion (3.7V per cell)",
+      "Operating Temperature": "-20°C to +65°C",
+      "Dimensions": "180mm × 90mm × 30mm"
+    }
+  },
+  {
+    "id": "bms-13s-80a",
+    "slug": "bms-13s-80a",
+    "title": "BMS 13S 80A (Li-ion)",
+    "shortDescription": "Compact and efficient Battery Management System for 13-series lithium-ion battery packs with intelligent protection.",
+    "fullDescription": "The BMS 13S 80A offers an excellent balance of performance and affordability for mid-range lithium-ion applications. Its compact design makes it ideal for space-constrained installations while maintaining full protection and monitoring capabilities. Popular in e-bikes, power tools, and portable power stations.",
+    "imageUrl": "/attached_assets/generated_images/BMS_13S_80A_product_a91a0b9a.png",
+    "category": "Li-ion BMS",
+    "specifications": {
+      "Voltage": "48.1V (13S)",
+      "Continuous Current": "80A",
+      "Peak Current": "160A",
+      "Protection Features": "Over-charge, Over-discharge, Short-circuit, Over-temperature",
+      "Compatibility": "Li-ion (3.7V per cell)",
+      "Operating Temperature": "-10°C to +60°C",
+      "Dimensions": "140mm × 75mm × 22mm"
+    }
+  }
+]
