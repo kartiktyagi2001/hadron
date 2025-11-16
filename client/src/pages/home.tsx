@@ -1,4 +1,5 @@
 import HeroBanner from "@/components/HeroBanner";
+import AnimatedCircuit from "@/components/AnimatedCircuit";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Zap, Award, ArrowRight, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -128,8 +129,7 @@ export default function Home() {
                     </Link>
                   </div>
                   <div className="relative h-64 md:h-full min-h-[300px]">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-lg" />
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-primary/30 rounded-full blur-3xl" />
+                    <AnimatedCircuit />
                   </div>
                 </div>
               </CardContent>

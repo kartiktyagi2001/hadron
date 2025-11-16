@@ -27,27 +27,25 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" data-testid="link-home">
-            <a className="flex items-center space-x-2 hover-elevate px-3 py-2 rounded-md -ml-3">
-              <span className="text-xl font-heading font-bold text-primary">HADRON</span>
-              <span className="text-xs font-medium text-muted-foreground">ELECTRONICS</span>
-            </a>
+          <Link href="/" data-testid="link-home" className="flex items-center space-x-2 hover-elevate px-3 py-2 rounded-md -ml-3">
+            <span className="text-xl font-heading font-bold text-primary">HADRON</span>
+            <span className="text-xs font-medium text-muted-foreground">ELECTRONICS</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
-              <Link key={link.path} href={link.path}>
-                <a
-                  data-testid={`link-${link.label.toLowerCase()}`}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover-elevate ${
-                    isActive(link.path)
-                      ? "text-foreground"
-                      : "text-muted-foreground"
-                  }`}
-                >
-                  {link.label}
-                </a>
+              <Link
+                key={link.path}
+                href={link.path}
+                data-testid={`link-${link.label.toLowerCase()}`}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors hover-elevate ${
+                  isActive(link.path)
+                    ? "text-foreground"
+                    : "text-muted-foreground"
+                }`}
+              >
+                {link.label}
               </Link>
             ))}
           </div>
@@ -74,18 +72,18 @@ export default function Navbar() {
               <SheetContent side="right" className="w-[280px]">
                 <div className="flex flex-col space-y-4 mt-8">
                   {navLinks.map((link) => (
-                    <Link key={link.path} href={link.path}>
-                      <a
-                        onClick={() => setOpen(false)}
-                        data-testid={`mobile-link-${link.label.toLowerCase()}`}
-                        className={`block px-4 py-2 rounded-md text-base font-medium hover-elevate ${
-                          isActive(link.path)
-                            ? "text-foreground"
-                            : "text-muted-foreground"
-                        }`}
-                      >
-                        {link.label}
-                      </a>
+                    <Link
+                      key={link.path}
+                      href={link.path}
+                      onClick={() => setOpen(false)}
+                      data-testid={`mobile-link-${link.label.toLowerCase()}`}
+                      className={`block px-4 py-2 rounded-md text-base font-medium hover-elevate ${
+                        isActive(link.path)
+                          ? "text-foreground"
+                          : "text-muted-foreground"
+                      }`}
+                    >
+                      {link.label}
                     </Link>
                   ))}
                   <Link href="/contact">
