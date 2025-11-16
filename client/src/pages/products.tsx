@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import ProductGrid from "@/components/ProductGrid";
 import { Skeleton } from "@/components/ui/skeleton";
+import { motion } from "framer-motion";
 
 interface Product {
   id: string;
@@ -18,16 +19,44 @@ export default function Products() {
 
   return (
     <div className="min-h-[calc(100vh-4rem)]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-heading font-bold text-foreground mb-4" data-testid="text-products-title">
-            Our Products
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Professional Battery Management Systems engineered for reliability and performance.
-          </p>
+      {/* Header Section */}
+      <div className="relative py-20 overflow-hidden border-b">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-primary/5" />
+        <motion.div
+          className="absolute top-20 right-20 w-72 h-72 bg-primary/20 rounded-full blur-3xl"
+          animate={{
+            scale: [1, 1.2, 1],
+            opacity: [0.3, 0.5, 0.3],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center"
+          >
+            <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+              Product Catalog
+            </span>
+            <h1 className="text-5xl font-heading font-bold text-foreground mb-6" data-testid="text-products-title">
+              Battery Management Systems
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Professional BMS solutions engineered for reliability, performance, and safety across diverse industrial applications.
+            </p>
+          </motion.div>
         </div>
+      </div>
 
+      {/* Products Grid */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {isLoading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[1, 2, 3].map((i) => (

@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 interface Product {
   id: string;
@@ -81,32 +81,35 @@ export default function ProductDetail() {
           </div>
 
           {/* Product Details */}
-          <div className="space-y-6">
+          <div className="space-y-8">
             <div>
-              <Badge variant="secondary" className="mb-4" data-testid="badge-category">
+              <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary border-primary/20" data-testid="badge-category">
                 {product.category}
               </Badge>
-              <h1 className="text-4xl font-heading font-bold text-foreground mb-4" data-testid="text-product-title">
+              <h1 className="text-4xl font-heading font-bold text-foreground mb-4 leading-tight" data-testid="text-product-title">
                 {product.title}
               </h1>
-              <p className="text-lg text-muted-foreground" data-testid="text-product-description">
+              <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-product-description">
                 {product.fullDescription}
               </p>
             </div>
 
             {/* Specifications */}
-            <div>
-              <h2 className="text-2xl font-heading font-semibold text-foreground mb-4">
+            <div className="bg-gradient-to-br from-muted/50 to-muted/30 rounded-lg p-6 border">
+              <h2 className="text-2xl font-heading font-semibold text-foreground mb-6 flex items-center gap-2">
+                <div className="w-1 h-6 bg-primary rounded-full" />
                 Technical Specifications
               </h2>
-              <div className="space-y-3">
-                {Object.entries(product.specifications).map(([key, value]) => (
+              <div className="space-y-1">
+                {Object.entries(product.specifications).map(([key, value], index) => (
                   <div
                     key={key}
-                    className="flex flex-wrap gap-2 py-3 border-b last:border-0"
+                    className={`flex flex-wrap gap-2 py-4 px-4 rounded-md hover-elevate ${
+                      index % 2 === 0 ? 'bg-background/50' : ''
+                    }`}
                     data-testid={`spec-${key.toLowerCase().replace(/\s+/g, '-')}`}
                   >
-                    <span className="font-medium text-foreground min-w-[140px]">{key}:</span>
+                    <span className="font-semibold text-foreground min-w-[160px]">{key}</span>
                     <span className="text-muted-foreground flex-1">{value}</span>
                   </div>
                 ))}
@@ -114,11 +117,17 @@ export default function ProductDetail() {
             </div>
 
             {/* CTA */}
-            <Link href="/contact">
-              <Button size="lg" className="w-full" data-testid="button-inquire">
-                Inquire Now
-              </Button>
-            </Link>
+            <div className="space-y-3">
+              <Link href="/contact">
+                <Button size="lg" className="w-full group" data-testid="button-inquire">
+                  Request a Quote
+                  <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+              <p className="text-sm text-center text-muted-foreground">
+                Get in touch for pricing, availability, and technical support
+              </p>
+            </div>
           </div>
         </div>
       </div>
