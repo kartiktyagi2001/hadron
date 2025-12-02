@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import heroBg from "@assets/generated_images/Hero_section_background_pattern_56a17368.png";
+
 import { ArrowRight, Zap } from "lucide-react";
 
 export default function HeroBanner() {
@@ -35,7 +35,7 @@ export default function HeroBanner() {
       {/* Pattern overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-[0.05]"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        style={{ backgroundImage: `url(/generated_images/Hero_section_background_pattern_56a17368.png)` }}
       />
       
       {/* Animated orbs */}

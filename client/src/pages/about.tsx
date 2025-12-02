@@ -2,9 +2,7 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Building2, Users, Target, TrendingUp, CheckCircle2, Award } from "lucide-react";
-import manufacturingImg from "@assets/generated_images/Manufacturing_facility_photo_b940c29e.png";
-import teamImg from "@assets/generated_images/Team_collaboration_photo_8f74708a.png";
-import qualityImg from "@assets/generated_images/Quality_testing_photo_5374a6d6.png";
+
 
 export default function About() {
   const stats = [
@@ -42,19 +40,19 @@ export default function About() {
       icon: Building2,
       title: "Engineering Excellence",
       description: "Precision-engineered solutions built on decades of expertise in power management.",
-      image: manufacturingImg,
+      image: "/generated_images/Manufacturing_facility_photo_b940c29e.png",
     },
     {
       icon: Users,
       title: "Customer-Centric",
       description: "Dedicated support and customized solutions to meet unique industrial requirements.",
-      image: teamImg,
+      image: "/generated_images/Team_collaboration_photo_8f74708a.png",
     },
     {
       icon: CheckCircle2,
       title: "Quality Assurance",
       description: "Rigorous testing protocols ensuring reliability in mission-critical applications.",
-      image: qualityImg,
+      image: "/generated_images/Quality_testing_photo_5374a6d6.png",
     },
   ];
 

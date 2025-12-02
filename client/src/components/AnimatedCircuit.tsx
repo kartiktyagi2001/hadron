@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import bmsImage from "@assets/generated_images/BMS_circuit_board_product_25789d1d.png";
+
 
 export default function AnimatedCircuit() {
   // Circuit node positions
@@ -45,7 +45,7 @@ export default function AnimatedCircuit() {
           }}
         >
           <img
-            src={bmsImage}
+            src="/generated_images/BMS_circuit_board_product_25789d1d.png"
             alt="Battery Management System"
             className="w-full h-auto drop-shadow-2xl"
           />
