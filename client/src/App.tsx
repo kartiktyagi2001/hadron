@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import AnimatedBackground from "@/components/AnimatedBackground";
+import ScrollToTop from "@/components/ScrollToTop";
 import Home from "@/pages/home";
 import About from "@/pages/about";
 import Products from "@/pages/products";
@@ -15,14 +16,17 @@ import NotFound from "@/pages/not-found";
 
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/products" component={Products} />
-      <Route path="/products/:slug" component={ProductDetail} />
-      <Route path="/contact" component={Contact} />
-      <Route component={NotFound} />
-    </Switch>
+    <>
+      <ScrollToTop />
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/products" component={Products} />
+        <Route path="/products/:slug" component={ProductDetail} />
+        <Route path="/contact" component={Contact} />
+        <Route component={NotFound} />
+      </Switch>
+    </>
   );
 }
 
