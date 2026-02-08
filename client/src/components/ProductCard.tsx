@@ -11,17 +11,20 @@ interface ProductCardProps {
   slug: string;
   title: string;
   shortDescription: string;
-  imageUrl: string;
+  images: string[];
   category: string;
+  price: number;
 }
 
 export default function ProductCard({
   slug,
   title,
   shortDescription,
-  imageUrl,
+  images,
   category,
+  price,
 }: ProductCardProps) {
+  const imageUrl = images[0] || "/images/placeholder.jpg";
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -65,6 +68,9 @@ export default function ProductCard({
             <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20" data-testid={`badge-category-${slug}`}>
               {category}
             </Badge>
+            <span className="text-sm font-medium text-muted-foreground" data-testid={`price-${slug}`}>
+              ₹{price.toLocaleString('en-IN')}
+            </span>
           </div>
           <h3 className="text-xl font-heading font-semibold text-foreground group-hover:text-primary transition-colors" data-testid={`text-title-${slug}`}>
             {title}

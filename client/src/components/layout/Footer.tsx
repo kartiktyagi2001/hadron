@@ -50,8 +50,8 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-heading font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Email: info@hadronelectronics.com</li>
-              <li>Phone: +91-XXXX-XXXXXX</li>
+              <li>Email: management@hadronelectronics.in</li>
+              <li>Phone: +91-9725342297</li>
               <li>India</li>
             </ul>
           </div>

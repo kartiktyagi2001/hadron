@@ -45,7 +45,7 @@ export default function AnimatedCircuit() {
           }}
         >
           <img
-            src="/generated_images/BMS_circuit_board_product_25789d1d.png"
+            src="attached_assets/generated_images/labtest.png"
             alt="Battery Management System"
             className="w-full h-auto drop-shadow-2xl"
           />

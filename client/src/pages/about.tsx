@@ -6,32 +6,32 @@ import { Building2, Users, Target, TrendingUp, CheckCircle2, Award } from "lucid
 
 export default function About() {
   const stats = [
-    { value: "30+", label: "Years of Excellence", icon: Award },
-    { value: "100K+", label: "BMS Units Deployed", icon: TrendingUp },
-    { value: "50+", label: "Expert Engineers", icon: Users },
-    { value: "#1", label: "In Indian Market", icon: Target },
+    { value: "4+", label: "Years of Excellence", icon: Award },
+    { value: "10k+", label: "BMS Units Deployed", icon: TrendingUp },
+    { value: "50+", label: "Satisfied Customers", icon: Users },
+    { value: "100%", label: "Made in India", icon: Target },
   ];
 
   const timeline = [
     {
-      year: "1994",
+      year: "2022",
       title: "Foundation",
-      description: "Hadron Electronics established with a vision to revolutionize battery management technology in India.",
+      description: "Hadron Electronics established with a vision to provide best-in-class battery management technology.",
     },
     {
-      year: "2008",
+      year: "2023",
       title: "Expansion",
-      description: "Launched LiFePO4 BMS series and expanded manufacturing capabilities to meet growing demand.",
-    },
-    {
-      year: "2015",
-      title: "Innovation",
-      description: "Introduced intelligent monitoring systems and became market leader in advanced BMS solutions.",
+      description: "Launched multiple BMS series and expanded manufacturing capabilities to meet growing demand.",
     },
     {
       year: "2024",
-      title: "Global Reach",
-      description: "Serving customers across 15+ countries with cutting-edge battery management technology.",
+      title: "Innovation",
+      description: "Introduced intelligent monitoring systems in advanced BMS solutions.",
+    },
+    {
+      year: "2025",
+      title: "Nation-wide Reach",
+      description: "Serving customers across 15+ states with cutting-edge battery management technology.",
     },
   ];
 
@@ -40,19 +40,19 @@ export default function About() {
       icon: Building2,
       title: "Engineering Excellence",
       description: "Precision-engineered solutions built on decades of expertise in power management.",
-      image: "/generated_images/Manufacturing_facility_photo_b940c29e.png",
+      image: "/attached_assets/generated_images/Manufacturing_facility_photo_b940c29e.png",
     },
     {
       icon: Users,
       title: "Customer-Centric",
       description: "Dedicated support and customized solutions to meet unique industrial requirements.",
-      image: "/generated_images/Team_collaboration_photo_8f74708a.png",
+      image: "/attached_assets/generated_images/Team_collaboration_photo_8f74708a.png",
     },
     {
       icon: CheckCircle2,
       title: "Quality Assurance",
       description: "Rigorous testing protocols ensuring reliability in mission-critical applications.",
-      image: "/generated_images/Quality_testing_photo_5374a6d6.png",
+      image: "/attached_assets/generated_images/labtest.png",
     },
   ];
 
@@ -87,8 +87,7 @@ export default function About() {
               <span className="text-primary"> Battery Management</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              For over three decades, we've been at the forefront of battery management technology, 
-              delivering reliable, efficient, and innovative solutions to industries across the globe.
+              
             </p>
           </motion.div>
 
@@ -198,7 +197,7 @@ export default function About() {
               Our Journey
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Three decades of innovation, growth, and excellence in battery management technology.
+              Four years of innovation, growth, and excellence in battery management technology.
             </p>
           </motion.div>
 
@@ -257,8 +256,8 @@ export default function About() {
               <CardContent className="p-8 md:p-12">
                 <div className="text-primary text-6xl font-serif mb-6">"</div>
                 <blockquote className="text-xl md:text-2xl font-medium text-foreground leading-relaxed mb-8">
-                  At Hadron Electronics, we don't just manufacture battery management systems — 
-                  we engineer solutions that power the future. Our commitment to innovation, quality, 
+                  At Hadron Electronics, we don't just manufacture battery management systems - 
+                  we engineer solutions that power the present and future. Our commitment to innovation, quality, 
                   and sustainability drives everything we do.
                 </blockquote>
                 <div className="flex items-center gap-4">
@@ -266,8 +265,8 @@ export default function About() {
                     <span className="text-2xl font-heading font-bold text-primary">H</span>
                   </div>
                   <div>
-                    <div className="font-heading font-semibold text-foreground">Founder & CEO</div>
-                    <div className="text-sm text-muted-foreground">Hadron Electronics</div>
+                    <div className="font-heading font-semibold text-foreground">Founder & Principal Engineer</div>
+                    <div className="text-sm text-muted-foreground">Anshul Tyagi</div>
                   </div>
                 </div>
               </CardContent>

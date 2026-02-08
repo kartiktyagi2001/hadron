@@ -8,24 +8,24 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "info@hadronelectronics.com",
-      href: "mailto:info@hadronelectronics.com",
+      value: "management@hadronelectronics.in",
+      href: "mailto:management@hadronelectronics.in",
       description: "Send us an email for detailed inquiries",
       gradient: "from-blue-500/10 to-cyan-500/10",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+91-XXXX-XXXXXX",
-      href: "tel:+91XXXXXXXXXX",
+      value: "+91-9725342297",
+      href: "tel:+919725342297",
       description: "Call us during business hours",
       gradient: "from-violet-500/10 to-purple-500/10",
     },
     {
       icon: MessageCircle,
       title: "WhatsApp",
-      value: "+91-XXXXXXXXXX",
-      href: "https://wa.me/91XXXXXXXXXX",
+      value: "+91-9725342297",
+      href: "https://wa.me/919725342297",
       description: "Quick response via WhatsApp",
       gradient: "from-green-500/10 to-emerald-500/10",
     },
@@ -156,7 +156,7 @@ export default function Contact() {
                     Location
                   </h2>
                   <p className="text-muted-foreground">
-                    Based in India, serving customers worldwide with reliable BMS solutions for industrial applications.
+                    Based in Rewari, Haryana, India, serving customers nation-wide with reliable BMS solutions for industrial and commercial applications.
                   </p>
                 </div>
               </div>

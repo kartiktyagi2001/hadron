@@ -117,7 +117,7 @@ export default function HeroBanner() {
           className="mt-16 grid grid-cols-3 gap-8 max-w-3xl mx-auto"
         >
           {[
-            { value: "100+", label: "Products Delivered" },
+            { value: "6+", label: "Products Delivered" },
             { value: "99.9%", label: "Reliability Rate" },
             { value: "24/7", label: "Support Available" },
           ].map((stat, i) => (

@@ -6,8 +6,9 @@ interface Product {
   slug: string;
   title: string;
   shortDescription: string;
-  imageUrl: string;
+  images: string[];
   category: string;
+  price: number;
 }
 
 interface ProductGridProps {
